@@ -118,7 +118,8 @@ def call_querydata_api(
         "generationOptions": {
             "generateNaturalLanguageAnswer": True,
             "generateQueryResult": True,
-            "generateExplanation": True
+            "generateExplanation": True,
+            "generateDisambiguationQuestion": True
         }
     }
 
@@ -137,7 +138,7 @@ skill_toolset = SkillToolset(
     skills=[database_query_skill]
 )
 
-MODEL_ID = "gemini-3.6-flash"
+MODEL_ID = "gemini-3.5-flash"
 
 # Agent configuration
 
